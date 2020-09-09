@@ -20,3 +20,23 @@ export const deleteSong=(song)=>{
     };
 };
 
+export const addUserAction=(user)=>{
+    return {
+        type:'ADD_USER_TO_LIST',
+        payload:user
+    }
+}
+
+export const selectUser=(user)=>{
+    return {
+        type:'USER_SELECTED',
+        payload:user
+    };
+}
+
+export const deleteUser=(user)=>{
+    return {
+        type:'DELETE_USER_FROM_LIST',
+        payload:user
+    }
+}
